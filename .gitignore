@@ -1,5 +1,6 @@
-/node_modules
 /vendor
+composer.lock
+/phpunit.xml
+.phpunit.result.cache
 /.idea
 /.vscode
-.phpunit.result.cache

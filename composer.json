@@ -30,5 +30,12 @@
         "psr-4": {
             "Villaflor\\IpAddress\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Villaflor\\IpAddress\\IpAddressServiceProvider"
+            ]
+        }
     }
 }
