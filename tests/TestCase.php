@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
      *
      * @return array
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             IpAddressServiceProvider::class,
