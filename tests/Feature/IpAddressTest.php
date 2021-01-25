@@ -9,10 +9,10 @@ use Villaflor\IpAddress\Tests\TestCase;
 
 class IpAddressTest extends TestCase
 {
-    public function test_can_get_public_ip_address()
+    public function test_can_get_public_ip_address(): void
     {
         $publicIp = IpAddress::getPublicIp();
 
-        $this->assertNotEmpty($publicIp);
+        self::assertNotEmpty($publicIp);
     }
 }
