@@ -6,10 +6,10 @@ namespace Villaflor\IpAddress;
 
 class IpAddress
 {
-    private const URL = 'http://ipecho.net/plain';
+    private const URL = 'https://ip.villaflor.workers.dev';
 
     public static function getPublicIp()
     {
-        return file_get_contents("http://ipecho.net/plain");
+        return file_get_contents(self::URL);
     }
 }
