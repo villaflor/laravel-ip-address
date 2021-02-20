@@ -4,6 +4,7 @@
 namespace Villaflor\IpAddress\Tests;
 
 
+use Illuminate\Foundation\Application;
 use Villaflor\IpAddress\IpAddressServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
@@ -11,11 +12,11 @@ class TestCase extends \Orchestra\Testbench\TestCase
     /**
      * Override application aliases.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param Application $app
      *
      * @return array
      */
-    protected function getPackageProviders($app): array
+    protected function getPackageProviders(Application $app): array
     {
         return [
             IpAddressServiceProvider::class,
