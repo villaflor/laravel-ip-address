@@ -6,7 +6,7 @@ namespace Villaflor\IpAddress;
 
 class IpAddress
 {
-    private const URL = 'https://ip.villaflor.workers.dev';
+    private const URL = 'https://worker.villaflor.one/get-ip';
 
     public static function getPublicIp()
     {
